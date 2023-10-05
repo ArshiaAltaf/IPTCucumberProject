@@ -1,0 +1,527 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-05T16:34:38.392Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8512543700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1039609600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.beforesce()"
+            }
+          },
+          {
+            "result": {
+              "duration": 95000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.befores()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Validate the forgotten password with invalid email address",
+        "description": "",
+        "id": "validate-the-forgotten-password-functionality;validate-the-forgotten-password-with-invalid-email-address",
+        "after": [
+          {
+            "result": {
+              "duration": 138800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterS()"
+            }
+          },
+          {
+            "result": {
+              "duration": 72300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterSce()"
+            }
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.\nBuild info: version: \u00274.12.1\u0027, revision: \u00278e34639b11\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [778f9aa232d3e4da3bd5c1f0be0b81a7, quit {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\\Users\\ADMIN\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51047}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51047/devtoo..., se:cdpVersion: 117.0.5938.150, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 778f9aa232d3e4da3bd5c1f0be0b81a7\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:161)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:437)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:351)\r\n\tat org.utilities.Baseclass.closebrowser(Baseclass.java:355)\r\n\tat org.stepdefinition.HooksClass.afterScenario(HooksClass.java:50)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\nCaused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.\nBuild info: version: \u00274.12.1\u0027, revision: \u00278e34639b11\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: driver.version: unknown\r\n\tat java.util.concurrent.CompletableFuture.reportGet(Unknown Source)\r\n\tat java.util.concurrent.CompletableFuture.get(Unknown Source)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:157)\r\n\t... 45 more\r\nCaused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.\nBuild info: version: \u00274.12.1\u0027, revision: \u00278e34639b11\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:183)\r\n\tat org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:117)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:148)\r\n\tat java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)\r\n\tat java.lang.Thread.run(Unknown Source)\r\n",
+              "duration": 25041072000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "HooksClass.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException\nBuild info: version: \u00274.12.1\u0027, revision: \u00278e34639b11\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [778f9aa232d3e4da3bd5c1f0be0b81a7, findElement {using\u003dxpath, value\u003d//p[text()\u003d\u0027Got it\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\\Users\\ADMIN\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51047}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51047/devtoo..., se:cdpVersion: 117.0.5938.150, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 778f9aa232d3e4da3bd5c1f0be0b81a7\r\n\tat org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)\r\n\tat org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)\r\n\tat org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)\r\n\tat org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)\r\n\tat org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)\r\n\tat org.stepdefinition.ForgottenPasswordStepDefinition.user_should_launch_the_chrome_browser_and_load_the_url_of_page(ForgottenPasswordStepDefinition.java:17)\r\n\tat ✽.User should launch the chrome browser and load the url of page(file:src/test/resources/FeatureFiles/ForgottenPassword.feature:4)\r\nCaused by: java.util.concurrent.TimeoutException\r\n\tat java.util.concurrent.CompletableFuture.timedGet(Unknown Source)\r\n\tat java.util.concurrent.CompletableFuture.get(Unknown Source)\r\n\tat org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)\r\n\tat org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)\r\n\tat org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)\r\n\tat org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)\r\n\tat org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)\r\n\tat org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)\r\n\tat org.stepdefinition.ForgottenPasswordStepDefinition.user_should_launch_the_chrome_browser_and_load_the_url_of_page(ForgottenPasswordStepDefinition.java:17)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\n",
+              "duration": 180060421600,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "User should launch the chrome browser and load the url of page",
+            "match": {
+              "location": "ForgottenPasswordStepDefinition.user_should_launch_the_chrome_browser_and_load_the_url_of_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1268200,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "User should click the forgotten password button",
+            "match": {
+              "location": "ForgottenPasswordStepDefinition.user_should_click_the_forgotten_password_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1768700,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User should enter invalid email address in the text box",
+            "match": {
+              "location": "ForgottenPasswordStepDefinition.user_should_enter_invalid_email_address_in_the_text_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 520200,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User should print the title of the page",
+            "match": {
+              "location": "ForgottenPasswordStepDefinition.userShouldPrintTheTitleOfThePage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 418800,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User should click the search button",
+            "match": {
+              "location": "ForgottenPasswordStepDefinition.user_should_click_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 734200,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User should navigate to temp blocked page",
+            "match": {
+              "location": "ForgottenPasswordStepDefinition.user_should_navigate_to_temp_blocked_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Validate the forgotten password functionality",
+    "description": "",
+    "id": "validate-the-forgotten-password-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/ForgottenPassword.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6511714900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should launch the browser and load the url",
+            "match": {
+              "location": "LoginStepDefinition.user_should_launch_the_browser_and_load_the_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-10-05T16:38:13.525Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6450028400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1144564100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.beforesce()"
+            }
+          },
+          {
+            "result": {
+              "duration": 83200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.befores()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Validate the login functionality with valid username and valid password",
+        "description": "",
+        "id": "validate-the-login-functionality-of-diyproject;validate-the-login-functionality-with-valid-username-and-valid-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 111300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterS()"
+            }
+          },
+          {
+            "result": {
+              "duration": 88200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterSce()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1301354600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type\u003d\\\"email\\\"] because of the following error:\nSyntaxError: Failed to execute \u0027evaluate\u0027 on \u0027Document\u0027: The string \u0027//input[@type\u003d\\\"email\\\"]\u0027 is not a valid XPath expression.\n  (Session info: chrome\u003d117.0.5938.150)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception\nBuild info: version: \u00274.12.1\u0027, revision: \u00278e34639b11\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [57dc7269a39473a89112eb607d12e125, findElement {using\u003dxpath, value\u003d//input[@type\u003d\\\"email\\\"]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\\Users\\ADMIN\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51731}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51731/devtoo..., se:cdpVersion: 117.0.5938.150, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 57dc7269a39473a89112eb607d12e125\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy22.sendKeys(Unknown Source)\r\n\tat org.utilities.Baseclass.filltextbox(Baseclass.java:375)\r\n\tat org.stepdefinition.LoginStepDefinition.userShouldEnterValidUsernameAndValidPassword(LoginStepDefinition.java:45)\r\n\tat ✽.User should enter valid username \"Altaf\" and valid password \"Altaf@123\"(file:src/test/resources/FeatureFiles/Login.feature:8)\r\n",
+              "duration": 267296200,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User should enter valid username \"Altaf\" and valid password \"Altaf@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Altaf\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"Altaf@123\"",
+                  "offset": 60
+                }
+              ],
+              "location": "LoginStepDefinition.userShouldEnterValidUsernameAndValidPassword(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 573800,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User should print the title of your page",
+            "match": {
+              "location": "LoginStepDefinition.user_should_print_the_title_of_your_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 467400,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User should click the login button",
+            "match": {
+              "location": "LoginStepDefinition.user_should_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 488300,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User should click the product of the page",
+            "match": {
+              "location": "LoginStepDefinition.user_should_click_the_product_of_the_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1561000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User should navigate to incorrect credential page",
+            "match": {
+              "location": "LoginStepDefinition.user_should_navigate_to_incorrect_credential_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@check"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7884490500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should launch the browser and load the url",
+            "match": {
+              "location": "LoginStepDefinition.user_should_launch_the_browser_and_load_the_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-10-05T16:38:29.243Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5952644600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1123657900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.beforesce()"
+            }
+          },
+          {
+            "result": {
+              "duration": 99800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.befores()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Validate the login functionality with valid username and valid password",
+        "description": "",
+        "id": "validate-the-login-functionality-of-diyproject;validate-the-login-functionality-with-valid-username-and-valid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 649300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterS()"
+            }
+          },
+          {
+            "result": {
+              "duration": 225400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterSce()"
+            }
+          },
+          {
+            "result": {
+              "duration": 756398000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@type\u003d\\\"email\\\"] because of the following error:\nSyntaxError: Failed to execute \u0027evaluate\u0027 on \u0027Document\u0027: The string \u0027//input[@type\u003d\\\"email\\\"]\u0027 is not a valid XPath expression.\n  (Session info: chrome\u003d117.0.5938.150)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception\nBuild info: version: \u00274.12.1\u0027, revision: \u00278e34639b11\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [637d5cd67b4759405512b837a55dde01, findElement {using\u003dxpath, value\u003d//input[@type\u003d\\\"email\\\"]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\\Users\\ADMIN\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51798/devtoo..., se:cdpVersion: 117.0.5938.150, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 637d5cd67b4759405512b837a55dde01\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy22.sendKeys(Unknown Source)\r\n\tat org.utilities.Baseclass.filltextbox(Baseclass.java:375)\r\n\tat org.stepdefinition.LoginStepDefinition.userShouldEnterVaidUsernameAndValidPassword(LoginStepDefinition.java:58)\r\n\tat ✽.User should enter vaid username and valid password(file:src/test/resources/FeatureFiles/Login.feature:22)\r\n",
+              "duration": 251494600,
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "User should enter vaid username and valid password",
+            "match": {
+              "location": "LoginStepDefinition.userShouldEnterVaidUsernameAndValidPassword(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Fruits",
+                  "Veg",
+                  "FstFood",
+                  "Starters"
+                ]
+              },
+              {
+                "cells": [
+                  "Orange",
+                  "Carrot",
+                  "Maggi",
+                  "Soup"
+                ]
+              },
+              {
+                "cells": [
+                  "Apple",
+                  "LFinger",
+                  "Samosa",
+                  "Icecream"
+                ]
+              },
+              {
+                "cells": [
+                  "Pine",
+                  "Ash",
+                  "Noodles",
+                  "Masala"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1100300,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "User should click the login button",
+            "match": {
+              "location": "LoginStepDefinition.user_should_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1177500,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "User should navigate to incorrect credential page",
+            "match": {
+              "location": "LoginStepDefinition.user_should_navigate_to_incorrect_credential_page()"
+            },
+            "rows": [
+              {
+                "cells": []
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@check"
+          },
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Validate the login functionality of diyproject",
+    "description": "",
+    "id": "validate-the-login-functionality-of-diyproject",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/Login.feature",
+    "tags": [
+      {
+        "name": "@check",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
